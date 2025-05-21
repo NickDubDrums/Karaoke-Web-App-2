@@ -2,17 +2,10 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Editor Tab</title>
   <link rel="stylesheet" href="style.css" />
-    
-    <!--<script type="module" src="script.js"></script>-->
-    <script type="module" src="script.js"></script>
-
-    
-  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
 </head>
 
 <body>
@@ -28,7 +21,7 @@
    <div class="centerLogo"> <a href="index.html"><img src="img/scrittalogo.PNG" alt="logo I Ragazzi"></a>   </div>  
   </header>
 
-<section id="editorPanel" class="hidden">
+<div id="editor-container">
   
       <h1>Editor Tab</h1>
       
@@ -89,6 +82,10 @@
       <ul id="editableSongList" class="song-list editor"></ul>
       
  </div>     
- </section>     
+</div>     
+
+<script src="editor.js"></script>
 
 </body>
+
+</html>

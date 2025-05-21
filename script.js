@@ -92,19 +92,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const waitingMsg = document.getElementById("waitingMsg");
   const cancelSlotBtn = document.getElementById("cancelSlotBtn");
 
-  const editorPanel = document.getElementById("editorPanel");
-  const newSongInput = document.getElementById("newSongInput");
-  const addSongBtn = document.getElementById("addSongBtn");
-  const editableSongList = document.getElementById("editableSongList");
-  const resetBtn = document.getElementById("resetBtn");
-  const downloadCSVBtn = document.getElementById("downloadCSVBtn");
-
-  const currentSongInput = document.getElementById("currentSongInput");
-  const nextSongBtn = document.getElementById("nextSongBtn");
-  const prevSongBtn = document.getElementById("prevSongBtn");
-  const annullaLimiteInput = document.getElementById("annullaLimite");
-  const maxPrenotazioniInput = document.getElementById("maxPrenotazioniInput");
-  const editorTableBody = document.querySelector("#editorTable tbody");
 
  //cost search and filter bar
   const searchBar = document.getElementById("filterBars");
