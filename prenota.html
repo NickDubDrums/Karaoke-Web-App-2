@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prenota Brano</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script type="module" src="prenota.js"></script>
+</head>
+<body>
+  <header>
+  <div class="centerLogo"> <a href="index.html"><img src="img/scrittalogo.PNG" alt="logo I Ragazzi"></a>   </div>  
+  </header>
+  <main class="main-prenota">
+    <section id="prenotaSection">
+    <h2 id="songTitle"></h2>
+    <form id="bookingForm">
+      <label for="userName">Inserisci il tuo nome</label> <br>
+      <input type="text" id="userName" required placeholder="Nome"/>
+      <button type="submit" class="btn">Conferma prenotazione</button>
+      <button onclick="location.href='index.html'" class="btn btn-secondary">Annulla</button>
+    </form>
+    </section>
+  </main>
+</body>
+</html>

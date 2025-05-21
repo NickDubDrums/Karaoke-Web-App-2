@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Max Prenotazioni</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   <header>
+  <div class="centerLogo"> <a href="index.html"><img src="img/scrittalogo.PNG" alt="logo I Ragazzi"></a>   </div>  
+  </header>
+
+  <nav id="sideMenu" class="side-menu">
+    <button id="closeMenu" class="close-btn">&times;</button>
+    <ul>
+      <li><a href="index.html?editor=true" id="loginEditor">Login Editor</a></li>
+      <li><a href="https://www.instagram.com/iragazzi_band" target="_blank">Instagram</a></li>
+      
+    </ul>
+  </nav>
+  <div class="maxCenter">
+<main id="mainMax">
+  <section id="maxReached visible">
+    <h2>Numero massimo di prenotazioni raggiunto!</h2>
+    <p>Non sei stato abbastanza veloce?<br />
+    Seguici su Instagram per le prossime date.</p>
+    <a class="insta-link" href="https://www.instagram.com/iragazzi_band" target="_blank">@iragazzi_band</a>
+  </section>
+</main>
+</div>
+  <script>
+    // Apre e chiude il menu
+    document.getElementById("menuToggle").addEventListener("click", () => {
+      document.getElementById("sideMenu").classList.add("visible");
+    });
+
+    document.getElementById("closeMenu").addEventListener("click", () => {
+      document.getElementById("sideMenu").classList.remove("visible");
+    });
+
+    // Login editor
+    document.getElementById("loginEditor").addEventListener("click", () => {
+      const pwd = prompt("Password editor:");
+      if (pwd === "1") {
+        window.location.href = "index.html"; // oppure pagina admin se ne hai una separata
+      } else {
+        alert("Password errata");
+      }
+    });
+  </script>
+</body>
+</html>
